@@ -1,15 +1,19 @@
 html, body{
   height: 100%;
   width: 100%;
-  background-color: lavender;
+  background-color: rgb(225, 234, 242);
   padding: 0;
   margin: 0;
   font-family: Verdana;
-  font-size: 14px;
+  font-size: 100%;
 }
 
 p{padding: 0;}
 a{text-decoration: none;}
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
 
 #container{
   width: 100%;
@@ -22,14 +26,15 @@ a{text-decoration: none;}
   position: fixed;
   width: 100%;
   height: 5%;
-  background-color: green;
+  background-color: rgb(106, 60, 191);
   z-index: 999;
 }
 
 /*HEADER LEFTSIDE START*/
 #header_leftside{
-  background-color: green;
+  background-color: rgb(106, 60, 191);
   display: inline-block;
+  color: white;
   width: 40%;
   height: 100%;
 }
@@ -43,22 +48,24 @@ a{text-decoration: none;}
 #header_leftside p{
   position: relative;
   bottom: 40%;
-  font-size: 20px;
-  background-color: green;
+  font-size: 100%;
+  background-color: rgb(106, 60, 191);
   height: 100%;
   text-align: center;
 }
 
 #header_leftside a{
-  background-color: green;
+  background-color: rgb(106, 60, 191);
   position: relative;
+  color: white;
+  font-size: 100%;
   top: 20%;
 
 }
 
 #header_search > input{
-  font-size: 40px;
-  background-color: green;
+  font-size: 100%;
+  background-color: rgb(106, 60, 191);
   border: none;
 }
 
@@ -66,7 +73,7 @@ a{text-decoration: none;}
 
 /*HEADER RIGHTSIDE START*/
 #header_rightside{
-  background-color: green;
+  background-color: rgb(106, 60, 191);
   display: inline-block;
   position: absolute;
   right: 0;
@@ -76,12 +83,15 @@ a{text-decoration: none;}
 
 #header_rightside > div {
   width: 10%;
-  background-color: gray;
+  height: 100%;
+  vertical-align: top;
+  background-color: rgb(106, 60, 191);
   display: inline-block;
 }
 
 #header_rightside p{
   text-align: center;
+  height: 50%;
   background-color: red;
 }
 
@@ -101,7 +111,7 @@ a{text-decoration: none;}
   position: fixed;
   top:5%;
   width: 15%;
-  background-color: gray;
+  background-color: rgb(225, 234, 242);
   height: 100%;
   padding-top: 2%;
 }
@@ -115,14 +125,14 @@ a{text-decoration: none;}
 
 #sidepanel ul li{
   text-align: center;
-  background-color: gray;
+  background-color: rgb(225, 234, 242);
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
 #sidepanel > #disclaimer{
   position: absolute;
-  background-color: gray;
+  background-color: rgb(225, 234, 242);
   width: 100%;
   height: 15%;
   bottom: 5%;
@@ -139,11 +149,11 @@ a{text-decoration: none;}
 #primary_container{
   height: 100%;
   width: 85%;
-  background-color: purple;
+  background-color: rgb(225, 234, 242);
   position: relative;
   top: 5%;
   left: 15%;
-  color: white;
+  color: black;
   z-index: 99;
 }
 
@@ -151,14 +161,15 @@ a{text-decoration: none;}
   vertical-align: top;  /*Keeps columns at the top when text is added.*/
   height: 100%;
   width: 33%;
-  background-color: white;
+  background-color: rgb(225, 234, 242);
   display: inline-block;
 }
 
 /*CARD START*/
 
 .card{
-  background-color: blue;
+  background-color: rgb(106, 60, 191);
+  color: white;
   width: 90%;
   height: auto;
   position: relative;
@@ -173,42 +184,45 @@ a{text-decoration: none;}
 .card_header{
   position: relative;
   padding-top: 2%;
-  padding-bottom: 2%;
+  padding-bottom: 10%;
 }
 
 .card_source{
   display: inline-block;
   position: absolute;
   left: 5%;
+  max-width: 70%;
 }
 
 .card_time{
   position: absolute;
   display: inline-block;
   right: 5%;
+  max-width: 20%;
 }
 
 .card_focus{
-
 }
 
 .card_content{
   width: 90%;
-  background-color: black;
+  background-color: white;
+  color: black;
+  padding-top: 5%;
+  padding-bottom: 5%;
   padding-left: 5%;
   padding-right: 5%;
 }
 
-.card_content{
-
-}
-
 .card_meta{
   padding-left: 5%;
-  background-color: black;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: white;
+  color: black;
 }
 
 .card_tags{
-  padding: 2% 5% 2% 5%;
+  padding: 2% 5% 2% 5%;  
 }
 /*CARD END*/

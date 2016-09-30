@@ -59,14 +59,8 @@ img{
   position: relative;
   color: white;
   font-size: 100%;
-  top: 20%;
+  top: 40%;
 
-}
-
-#header_search > input{
-  font-size: 100%;
-  background-color: rgb(106, 60, 191);
-  border: none;
 }
 
 /*HEADER LEFTSIDE END*/
@@ -93,6 +87,10 @@ img{
   text-align: center;
   height: 50%;
   background-color: red;
+  font-weight: bolder;
+  position: relative;
+  left: 70%;
+  color: white;
 }
 
 #header_rightside > .large_spacer{
@@ -124,7 +122,8 @@ img{
 }
 
 #sidepanel ul li{
-  text-align: center;
+  text-align: left;
+  margin-left: 20%;
   background-color: rgb(225, 234, 242);
   padding-top: 10px;
   padding-bottom: 10px;
@@ -201,8 +200,6 @@ img{
   max-width: 20%;
 }
 
-.card_focus{
-}
 
 .card_content{
   width: 90%;
@@ -223,6 +220,6 @@ img{
 }
 
 .card_tags{
-  padding: 2% 5% 2% 5%;  
+  padding: 2% 5% 2% 5%;
 }
 /*CARD END*/

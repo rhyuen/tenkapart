@@ -65,32 +65,16 @@ function createCardElement(scopedArticle){
 
 httpGet("/guardian", function(content){
   var guardianObj = JSON.parse(content);
-  console.log(guardianObj.rss.channel[0].item);
-
   var guardianArticles = guardianObj.rss.channel[0].item;
   guardianArticles.map(function(currArticle){
-      createCardElement(currArticle);
+    createCardElement(currArticle);
   });
-
-  //categroy arr[n]
-  //pubdate
-  //title
-  //description: arr[1]
-  //link: arr[1]
-
 });
 
 httpGet("/economist", function(content){
   var economistObj = JSON.parse(content);
-  console.log(economistObj.rss.channel[0].item);
-
   var econArticles = economistObj.rss.channel[0].item;
   econArticles.map(function(currArticle){
     createCardElement(currArticle);
   });
-  //category [arr3]\
-  //desc arr1
-  //link
-  //pubdate arr1
-  //title arr1
 });

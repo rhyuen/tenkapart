@@ -1,0 +1,214 @@
+html, body{
+  height: 100%;
+  width: 100%;
+  background-color: lavender;
+  padding: 0;
+  margin: 0;
+  font-family: Verdana;
+  font-size: 14px;
+}
+
+p{padding: 0;}
+a{text-decoration: none;}
+
+#container{
+  width: 100%;
+  height: 100%;
+}
+
+/*HEADER CSS BEGIN*/
+
+#header_container{
+  position: fixed;
+  width: 100%;
+  height: 5%;
+  background-color: green;
+  z-index: 999;
+}
+
+/*HEADER LEFTSIDE START*/
+#header_leftside{
+  background-color: green;
+  display: inline-block;
+  width: 40%;
+  height: 100%;
+}
+
+#header_leftside > div{
+  display: inline-block;
+  width: 20%;
+  height: 100%;
+}
+
+#header_leftside p{
+  position: relative;
+  bottom: 40%;
+  font-size: 20px;
+  background-color: green;
+  height: 100%;
+  text-align: center;
+}
+
+#header_leftside a{
+  background-color: green;
+  position: relative;
+  top: 20%;
+
+}
+
+#header_search > input{
+  font-size: 40px;
+  background-color: green;
+  border: none;
+}
+
+/*HEADER LEFTSIDE END*/
+
+/*HEADER RIGHTSIDE START*/
+#header_rightside{
+  background-color: green;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  width: 40%;
+  height: 100%;
+}
+
+#header_rightside > div {
+  width: 10%;
+  background-color: gray;
+  display: inline-block;
+}
+
+#header_rightside p{
+  text-align: center;
+  background-color: red;
+}
+
+#header_rightside > .large_spacer{
+  width: 50%;
+}
+
+#header_rightside > .small_spacer{
+  width: 10%;
+}
+
+/*HEADER RIGHTSIDE END*/
+/*HEADER CSS END*/
+
+/*SIDEPANEL BEGIN*/
+#sidepanel{
+  position: fixed;
+  top:5%;
+  width: 15%;
+  background-color: gray;
+  height: 100%;
+  padding-top: 2%;
+}
+
+#sidepanel > ul{
+  margin: 0;
+  list-style: none; /*Remove indentation from li*/
+  padding-left: 0;
+  list-style-type: none; /*Removes the Bullets from UL*/
+}
+
+#sidepanel ul li{
+  text-align: center;
+  background-color: gray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#sidepanel > #disclaimer{
+  position: absolute;
+  background-color: gray;
+  width: 100%;
+  height: 15%;
+  bottom: 5%;
+}
+#sidepanel > #disclaimer > p {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+/*SIDEPANEL END*/
+
+/*PRIM CONTAINER START*/
+#primary_container{
+  height: 100%;
+  width: 85%;
+  background-color: purple;
+  position: relative;
+  top: 5%;
+  left: 15%;
+  color: white;
+  z-index: 99;
+}
+
+#primary_container > .column{
+  vertical-align: top;  /*Keeps columns at the top when text is added.*/
+  height: 100%;
+  width: 33%;
+  background-color: white;
+  display: inline-block;
+}
+
+/*CARD START*/
+
+.card{
+  background-color: blue;
+  width: 90%;
+  height: auto;
+  position: relative;
+  top: 2%;
+  left: 5%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  padding-top: 3%;
+  display: inline-block;
+}
+
+.card_header{
+  position: relative;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.card_source{
+  display: inline-block;
+  position: absolute;
+  left: 5%;
+}
+
+.card_time{
+  position: absolute;
+  display: inline-block;
+  right: 5%;
+}
+
+.card_focus{
+
+}
+
+.card_content{
+  width: 90%;
+  background-color: black;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.card_content{
+
+}
+
+.card_meta{
+  padding-left: 5%;
+  background-color: black;
+}
+
+.card_tags{
+  padding: 2% 5% 2% 5%;
+}
+/*CARD END*/
